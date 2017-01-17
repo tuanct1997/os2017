@@ -1,0 +1,76 @@
+#echo hello world
+hello world
+
+#passwd
+Changing password for tuanct1997.
+(current) UNIX password: 
+passwd: Authentication token manipulation error
+passwd: password unchanged
+
+*try again because i wrote password wrong
+Changing password for tuanct1997.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+
+#date
+Tue Jan 17 16:18:32 ICT 2017
+
+#arch
+x86_64
+
+#uname -a
+Linux X550LD 4.4.0-59-generic #80-Ubuntu SMP Fri Jan 6 17:47:47 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+
+#dmesg
+[  269.888544] ACPI Warning: \_SB_.PCI0.RP05.PEGP._DSM: Argument #4 type mismatch - Found [Buffer], ACPI requires [Package] (20150930/nsarguments-95)
+[  269.889318] ACPI: \_SB_.PCI0.RP05.PEGP: failed to evaluate _DSM
+[  269.889333] ACPI Warning: \_SB_.PCI0.RP05.PEGP._DSM: Argument #4 type mismatch - Found [Buffer], ACPI requires [Package] (20150930/nsarguments-95)
+[  269.889798] nouveau 0000:04:00.0: DRM: evicting buffers...
+[  269.919624] nouveau 0000:04:00.0: DRM: waiting for kernel channels to go idle...
+[  269.919662] nouveau 0000:04:00.0: DRM: suspending client object trees...
+[  269.920128] nouveau 0000:04:00.0: DRM: suspending kernel object tree...
+
+#uptime
+ 16:19:04 up 5 min,  2 users,  load average: 0.08, 0.23, 0.13
+
+#who am i
+
+**notthing happen
+
+#whoami
+tuanct1997
+
+#who
+tuan     tty7         2017-01-17 16:13 (:0)
+tuanct1997 tty8         2017-01-17 16:17 (:1)
+
+#id
+uid=1001(tuanct1997) gid=1001(tuanct1997) groups=1001(tuanct1997)
+
+#last
+reboot   system boot  4.4.0-31-generic Tue Jan 10 11:18 - 11:56 (3+00:37)
+tuan     tty7         :0               Tue Jan 10 10:37 - crash  (00:41)
+reboot   system boot  4.4.0-31-generic Tue Jan 10 10:37 - 11:56 (3+01:19)
+tuan     tty7         :0               Tue Jan 10 08:27 - down   (-6:-56)
+reboot   system boot  4.4.0-31-generic Tue Jan 10 08:27 - 01:31  (-6:-56)
+tuan     tty7         :0               Mon Jan  9 22:11 - down   (00:11)
+reboot   system boot  4.4.0-31-generic Mon Jan  9 22:11 - 22:23  (00:12)
+tuan     tty7         :0               Mon Jan  9 22:10 - down   (00:00)
+tuan     tty7         :0               Mon Jan  9 21:46 - 22:10  (00:23)
+reboot   system boot  4.4.0-31-generic Mon Jan  9 21:46 - 22:10  (00:24)
+
+#finger
+The program 'finger' is currently not installed. To run 'finger' please ask your administrator to install the package 'finger'
+
+#w
+16:19:35 up 6 min,  2 users,  load average: 0.04, 0.20, 0.12
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+tuan     tty7     :0               16:13    6:03   4.29s  0.15s /sbin/upstart -
+tuanct19 tty8     :1               16:17    6:03   1.77s  0.14s /sbin/upstart -
+
+
+
+
+
