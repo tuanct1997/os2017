@@ -63,6 +63,10 @@ reboot   system boot  4.4.0-31-generic Mon Jan  9 21:46 - 22:10  (00:24)
 
 #finger
 The program 'finger' is currently not installed. To run 'finger' please ask your administrator to install the package 'finger'
+uppdate output :
+Login       Name         Tty      Idle  Login Time   Office     Office Phone
+tuanct1997  tuanct1997   tty7       23  Jan 18 20:34 (:0)
+
 
 #w
 16:19:35 up 6 min,  2 users,  load average: 0.04, 0.20, 0.12
