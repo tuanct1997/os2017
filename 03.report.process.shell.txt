@@ -1,0 +1,45 @@
+#ps -aux
+output:
+tuanct1+ 29211  0.0  0.5 431080 20144 ?        Sl   Th0118   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+tuanct1+ 29231  0.1  0.2 210348 10112 ?        Sl   Th0118   0:10 /usr/lib/ibus/ibus-engine-simple
+tuanct1+ 29257  0.0  0.2 294332  9108 ?        Sl   Th0118   0:00 /usr/lib/ibus-unikey/ibus-engine-unikey --ibus
+tuanct1+ 29811  0.1  0.8 639412 32640 ?        Sl   Th0118   0:10 gksudo boot-repair
+root     29815  0.0  0.1  63628  4396 ?        Ss   Th0118   0:00 /usr/bin/sudo -H -S -p GNOME_SUDO_PASS -u root -- boot-repair
+root     29819  0.0  0.0  21320  3456 ?        S    Th0118   0:00 /bin/bash /usr/bin/boot-repair
+root     29824  0.0  1.5 742388 60672 ?        Sl   Th0118   0:05 /usr/bin/python /usr/bin/glade2script -g ./boot-sav.glade -s ./boot-repair.sh --combobox=@@_combobox_format_partition@@col --combobox=@@_c
+root     29832  0.0  0.2  26772  9456 ?        S    Th0118   0:01 /bin/bash ./boot-repair.sh
+root     29864  0.0  0.0  22076  2656 ?        S    Th0118   0:00 /bin/bash ./boot-repair.sh
+root     29866  0.0  0.0  15896   680 ?        S    Th0118   0:00 tee /var/log/boot-sav/log/2017-01-18__22h20boot-repair59/boot-repair.log
+
+#gedit
+Output : 
+
+#ps -aux | grep gedit
+Output: Notthing
+tuanct1+  8918  0.2  1.0 734468 40600 ?        Sl   00:23   0:11 gedit
+tuanct1+  9805  0.0  0.0  22820  1032 pts/17   S+   01:27   0:00 grep --color=auto gedit
+
+
+#cat /proc/8918/status
+Output:
+CapEff:	0000000000000000
+CapBnd:	0000003fffffffff
+CapAmb:	0000000000000000
+Seccomp:	0
+Cpus_allowed:	ff
+Cpus_allowed_list:	0-7
+Mems_allowed:	00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	16593
+nonvoluntary_ctxt_switches:	2320
+
+#kill -STOP 8918
+Output: Notthing
+
+#kill -CONT 8918
+Output: Notthing
+
+#kill -KILL 8918
+Output: Notthing
+
+

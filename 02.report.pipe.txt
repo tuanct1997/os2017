@@ -1,0 +1,33 @@
+# find | grep 'list'
+output : 
+./.mozilla/firefox/euoglhkh.default/blocklist.xml
+./Desktop/this is a list
+./.local/share/zeitgeist/fts.index/termlist.baseA
+./.local/share/zeitgeist/fts.index/postlist.DB
+./.local/share/zeitgeist/fts.index/postlist.baseA
+./.local/share/zeitgeist/fts.index/postlist.baseB
+./.local/share/zeitgeist/fts.index/termlist.DB
+./.local/share/zeitgeist/fts.index/termlist.baseB
+
+#wc -l /etc/passwd
+output:
+40 /etc/passwd
+
+#free -t -h
+output : 
+              total        used        free      shared  buff/cache   available
+Mem:           3,7G        1,4G        812M        454M        1,5G        1,6G
+Swap:          7,6G          0B        7,6G
+Total:          11G        1,4G        8,4G
+
+#grep 'siblings' /proc/cpuinfo
+Output:
+siblings	: 4
+siblings	: 4
+siblings	: 4
+siblings	: 4
+
+
+#find Desktop -type f -iname '*.jpg' | wc -l
+Output: 
+1
