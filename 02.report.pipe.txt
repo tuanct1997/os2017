@@ -20,13 +20,9 @@ Mem:           3,7G        1,4G        812M        454M        1,5G        1,6G
 Swap:          7,6G          0B        7,6G
 Total:          11G        1,4G        8,4G
 
-#grep 'siblings' /proc/cpuinfo
+#cat /proc/cpuinfo | grep "processor" | wc -l
 Output:
-siblings	: 4
-siblings	: 4
-siblings	: 4
-siblings	: 4
-
+4
 
 #find Desktop -type f -iname '*.jpg' | wc -l
 Output: 
