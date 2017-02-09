@@ -1,0 +1,5 @@
+~$ ps -e | grep "firefox"
+ 2203 ?        00:06:35 firefox
+~$ ps -o nlwp 2203
+NLWP
+  48
